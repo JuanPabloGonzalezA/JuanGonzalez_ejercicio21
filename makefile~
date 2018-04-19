@@ -1,0 +1,8 @@
+grafica.png : data.txt
+	python grafica.py
+data.txt: a.out
+	./a.out > data.txt
+a.out: 
+	c++ prueba.cpp
+clean:
+	rm grafica.png data.txt a.out
